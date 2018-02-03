@@ -4,4 +4,5 @@
 This is a simplest framework created for the article "Solid automation tests pipeline with Serenity, Selenium, Rest Assured, Taurus and Jenkins Blue ocean" to give you a well built launch pad that you can use to give life to your own automation pipeline. 
 Mentioned article is concentrated on the continuous integration workflow itself, and it will provide you with everything you need to set up a whole QA automation pipeline with few technologies which you might find very useful for your needs. 
 
-We can find the article by .... link. 
+We can find the article by this link: 
+https://www.blazemeter.com/blog/qa-automation-pipeline-learn-how-to-build-your-own
