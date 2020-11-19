@@ -24,6 +24,10 @@ jobs:
       uses: pabsi/setup-maven@v4
       with:
         maven-version: 3.5.4
+    - name: Install chrome
+      run: |
+       chmod +x ./scripts/InstallChrome.sh
+        ./scripts/InstallChrome.sh
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Saving test results
@@ -31,3 +35,4 @@ jobs:
       with:
         name: serenity-report
         path: target/site
+    
