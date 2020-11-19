@@ -30,9 +30,14 @@ jobs:
         ./InstallChrome.sh
     - name: Build with Maven
       run: mvn -B clean install
+
+  
+  publish:
+    needs: build
     - name: Saving test results
       uses: actions/upload-artifact@v2
       with:
         name: serenity-report
         path: target/site
+  
     
