@@ -26,8 +26,8 @@ jobs:
         maven-version: 3.5.4
     - name: Install chrome
       run: |
-       chmod +x ./scripts/InstallChrome.sh
-        ./scripts/InstallChrome.sh
+       chmod +x ./InstallChrome.sh
+        ./InstallChrome.sh
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Saving test results
