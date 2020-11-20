@@ -30,12 +30,6 @@ jobs:
         ./InstallChrome.sh
     - name: Build with Maven
       run: mvn -B clean install
-
-  
-  publish:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
     - name: Saving test results
       uses: actions/upload-artifact@v2
       with:
