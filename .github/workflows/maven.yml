@@ -34,7 +34,6 @@ jobs:
   
   publish:
     runs-on: ubuntu-latest
-    needs: build
     steps:
     - name: Saving test results
       uses: actions/upload-artifact@v2
