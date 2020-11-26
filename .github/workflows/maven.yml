@@ -35,5 +35,13 @@ jobs:
       with:
         name: serenity-report
         path: target/site
+    - name: Build and push
+      uses: mr-smithers-excellent/docker-build-push@v4
+      with:
+        image: bossraths/samplerepo
+        registry: docker.io
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+      
   
     
